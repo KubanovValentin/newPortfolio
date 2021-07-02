@@ -10,6 +10,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        
     }
     .block {
         position: absolute;
@@ -19,6 +20,7 @@
         box-shadow: 10px 10px 50px rgba(137, 255, 116,.3);
         border: 1px solid #39FF14;
     }
+
     &__wrapper {
         position: relative;
         overflow: hidden;
@@ -26,7 +28,7 @@
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        background-color: black;
+        background:rgb(1, 39, 17);
     }
     &__title {
         display: flex;
@@ -36,7 +38,7 @@
         line-height: 0.6em;
         z-index: 1000;
         font-weight: 400;
-        color: blue;
+        color: #12F8F5;
         text-shadow: -1px 0 white, 0 1px black, 1px 0 black, 0 -1px black;
         span {
             color: red;
@@ -45,20 +47,50 @@
             font-weight: bold;
         }
     }
-    &__btn {
-        position: absolute;
-        display: inline-block;
-        top:70%;
-        left: 50%;
+    
+    button {
+        background:rgba(255,0,0,0.3);
+        border: none;
+        position: relative;
         z-index: 1;
-        width: 12vw;
+        line-height: 1vw;
+        width: 13vw;
         height: 3vw;
-        transform: translate(-50%, -50%);
-        color:black;
+        top: 7vw;
         font-size: 1vw;
         text-transform: uppercase;
         font-weight: bold;
-        background-color:blue;
         cursor: pointer;
+        padding: 1vw 2vw;
+        text-decoration: none;
+        color:red;
+        letter-spacing: 1vw;
+        transition: 0.5s;
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 13vw;
+            height: 3vw;
+            rect {
+                width: 13vw;
+                height: 3vw;
+                fill: transparent;
+                stroke-width: 9;
+                stroke: red;
+                stroke-dasharray: 100;
+                animation: animateStroke 2s linear infinite;
+            }
+        }
+        
+    }
+    
+}
+@keyframes animateStroke {
+    0% {
+        stroke-dashoffset: 400;
+    }
+    100% {
+        stroke-dashoffset: 50;
     }
 }
