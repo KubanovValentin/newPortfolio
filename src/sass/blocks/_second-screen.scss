@@ -1,0 +1,40 @@
+.second-screen {
+    display: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    svg {
+        width: 0;
+        height: 0;
+    }
+    &__wrapper {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background:rgb(1, 39, 17);
+    }
+    &__text {
+        position: relative;
+        align-items:center;
+        width: 100%;
+        filter: url(#fire);
+    }
+    &__name {
+        
+        font-size: 5vw;
+        line-height: 1.5em;
+        text-transform:uppercase;
+        position: relative;
+        color: #ebb82e;
+        font-weight: 600;
+        -webkit-box-reflect: below -120px linear-gradient(transparent, #0008);
+        text-shadow: 0 0 10px #f10505,
+        0 0 40px #ec4a0a,
+        0 0 80px #ff8c3b,
+        0 0 160px #ec4a0a,
+        0 0 240px #ff8c3b,
+    }
+}

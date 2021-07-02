@@ -1,0 +1,34 @@
+// *{
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+// }
+// body{
+//     display: flex;
+//     justify-content: center;
+//     align-items:center;
+//     min-height: 100vh;
+//     background: black;
+// }
+// .text {
+//     position: relative;
+//     width: 100%;
+//     text-align: center;
+//     filter: url(#fire);
+// }
+// h2 {
+//     position: relative;
+//     font-weight: 600;
+//     color: #ffeb3b;
+//     font-size: 16em;
+//     -webkit-box-reflect: below -120px linear-gradient(transparent, #0008);
+//     text-shadow: 0 0 10px #ff8c3b,
+//         0 0 40px #ff8c3b,
+//         0 0 80px #ff8c3b,
+//         0 0 160px #ff8c3b,
+//         0 0 240px #ff8c3b,
+// }
+// svg {
+//     width: 0;
+//     height: 0;
+// }
