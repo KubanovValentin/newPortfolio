@@ -38,11 +38,16 @@ function hideshow() {
     document.getElementById("second").style = "display:block";
 }
 
+function hideShow() {
+    document.getElementById("second").style = "display:none";
+    document.getElementById("common").style = "display:block";
+}
+
 
 // ----------------
 // setInterval(function(), 1000);
 // second page 
-window.addEventListener("load", function() {
+// window.addEventListener("load", function() {
 
 	const text = document.querySelector('.third-screen__text');
     text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
@@ -82,5 +87,5 @@ window.addEventListener("load", function() {
         duration: 5000,
         delay: anime.stagger(20),
     });
-});
+// });
 

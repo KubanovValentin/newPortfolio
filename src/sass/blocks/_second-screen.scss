@@ -26,7 +26,7 @@
     &__name {
         font-size: 4vw;
         line-height: 2.3em;
-        text-transform:uppercase;
+        // text-transform:uppercase;
         position: relative;
         color: #ebb82e;
         font-weight: 600;
@@ -85,6 +85,7 @@
         }
     }
     &__btn {
+        margin: 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -95,6 +96,7 @@
         position: relative;
         width: 250px;
         height: 250px;
+        // -webkit-box-reflect: right -1vw linear-gradient(transparent, #0008);
     }
     &__item {
         position: absolute;
@@ -119,6 +121,10 @@
         animation-delay: -1s;
         color: #afe9a5;
         text-decoration: none;
+        &:hover {
+            border: 4px double orange; 
+            border-radius: 10%;
+        }
     }
 }
 @keyframes animate {
