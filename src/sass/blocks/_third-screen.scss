@@ -16,8 +16,9 @@
     }
     &__fhoto {
         position: absolute;
-        bottom: 10vw;
+        bottom: 14.8vw;
         right: 0;
+        -webkit-box-reflect: below -0.5vw linear-gradient(transparent, #0008);
     }
     &__wrapper {
         display: flex;
@@ -27,15 +28,25 @@
         transform-style: preserve-3d;
         perspective: 1000px;
     }
+    &__tw {
+        position: absolute;
+        width: 70vw;
+        height: 20vw;
+        top: 10;
+        left: 0;
+        
+    }
     &__box {
         position: relative;
         width: 100%;
         transform-style: preserve-3d;
-        animation: textEntry 6s linear infinite;
+        left: 29vw;
+        top: 5vw;;
+        // animation: textEntry 6s linear infinite;
     }
     &__shadow {
         position: absolute;
-        bottom: 0;
+        bottom: 5vw;
         left: 0;
         transform: translateX(-50%);
         width: 18vw;
@@ -75,14 +86,15 @@
     &__text {
         position: absolute;
         text-align: center;
-        color: #00cefe;
+        color: #010a0ce8;
         margin: 40px;
         max-width: 50em;
-        font-size: 3vw;
+        font-size: 2vw;
         span {
             position: relative;
             display: inline-block;
         }
+        -webkit-box-reflect: below 10vw linear-gradient(transparent, #0008);
     }
 
     &__img {
@@ -123,17 +135,17 @@
         transform: translateX(-50%) scale(0.2);
     }
 }
-@keyframes textEntry {
-    0%,5%
-    {
-        transform: translateZ(1500px);
-    }
-    15%,95%
-    {
-        transform: translateZ(0px);
-    }
-    100%
-    {
-        transform: translateZ(1500px);
-    }
-}
+// @keyframes textEntry {
+//     0%,5%
+//     {
+//         transform: translateZ(1500px);
+//     }
+//     15%,95%
+//     {
+//         transform: translateZ(0px);
+//     }
+//     100%
+//     {
+//         transform: translateZ(1500px);
+//     }
+// }
