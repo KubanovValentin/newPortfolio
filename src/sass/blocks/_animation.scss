@@ -46,26 +46,42 @@
         filter: hue-rotate(360deg);
     }
 }
-@keyframes animateRot {
-    0% 
+@keyframes animateBlick {
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92% 
     {
-        transform: rotateY(360deg);
+        color: rgba(151, 206, 238, 0.972);
+        box-shadow: none;
     }
-    100% 
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100% 
     {
-        transform: rotateY(0deg);
-    }
-}
-@keyframes animateShadow {
-    0%,100% 
-    {
-        transform: translateX(-50%) scale(1);
-    }
-    50% 
-    {
-        transform: translateX(-50%) scale(0.2);
+        color: rgba(5, 86, 139, 0.74);
+        text-shadow: 0 0 10px #03bcf4,
+                0 0 20px #03bcf4,
+                0 0 40px #03bcf4,
+                0 0 80px #03bcf4,
+                0 0 160px #03bcf4;
     }
 }
+// @keyframes animateRot {
+//     0% 
+//     {
+//         transform: rotateY(360deg);
+//     }
+//     100% 
+//     {
+//         transform: rotateY(0deg);
+//     }
+// }
+// @keyframes animateShadow {
+//     0%,100% 
+//     {
+//         transform: translateX(-50%) scale(1);
+//     }
+//     50% 
+//     {
+//         transform: translateX(-50%) scale(0.2);
+//     }
+// }
 // @keyframes textEntry {
 //     0%,5%
 //     {

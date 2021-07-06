@@ -1,0 +1,55 @@
+@media (max-width:991px) {
+    .third-screen {
+        &::before {
+            clip-path: circle(0vw at center);
+        }
+        &__info {
+            font-size: 3rem;
+            text-align: center;
+        }
+        &__wrapper {
+            padding: 40px 0;
+            &:hover {
+                // transform: perspective(500px) scaleZ(6) rotateX(45deg);
+                .third-screen__card {
+                    position: relative;
+                    top: initial;
+                    left: initial;
+                    transform: initial;
+                    margin-bottom: 20px;
+                    .third-screen__descr {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        &__card {
+            margin-top: 100px;
+        }
+    }
+}
+
+
+
+@media (max-width:575px) {
+    .third-screen {
+        &__info {
+            font-size: 2rem;
+        }
+        &__wrapper {
+            &:hover {
+                .third-screen__card {
+                    height: 500px;
+                    .third-screen__descr {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        &__card {
+            width: 208px;
+            height: 300px;
+        }
+    }
+    
+}
