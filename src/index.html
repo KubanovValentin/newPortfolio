@@ -51,23 +51,23 @@
     <meta name="theme-color" content="#ffffff">
 
 
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
-    <section id="first" class="first-screen">
+    <!-- <section id="first" class="first-screen">
         <div class="first-screen__wrapper">
             <div class="container">
                 <h2 class="first-screen__title"><span>Внимание!!!</span><br>Загрузка нужного Вам специалиста завершеннa!!!</h2>
             </div>
             <button onclick="hideshow();">Button<svg><rect></rect></svg></button>
         </div>
-    </section>
+    </section> -->
 
-    <section id="second" class="second-screen">
+    <!-- <section id="second" class="second-screen">
         <div class="second-screen__wrapper">
             <div class="container">
                 <div class="second-screen__text">
@@ -115,47 +115,67 @@
                     </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section id="common" class="common-screen">
         <div class="third-screen">
             <h2 class="third-screen__info">Краткая информация обо мне</h2>
             <div class="third-screen__wrapper">
-                <div class="third-screen__card" style="--i:-1;">
+                <div class="third-screen__card reality" style="--i:-1;">
                     <div class="third-screen__content">
                         <div class="third-screen__descr" style="--j:0;">
                             <h2>карта реальности</h2>
-                            <p>Я <i>начинающий</i> Web програмист.</p>
+                            <p>Я <i>начинающий</i> Web программист.</p>
                             <p>Недавно я окончил обучению по <b>HTML</b>, <b>CSS</b> и поверхностно <b>JavaScript</b>.</p>
-                            <p>На данный момент продолжаю обучение по полному курсу JavaScript+React.</p>
+                            <p>На данный момент продолжаю обучение по полному курсу <b>JavaScript</b>+<b>React</b>.</p>
                             <p>Имею большой жизненный опыт, а так же желание работать в команде над проектами компании.</p>
-                            <p>Готов реализовывать интересные и сложные проекты.</p>
+                            <p> <span>Готов реализовывать интересные и сложные проекты!</span></p>
                         </div>
                     </div>
                 </div>
-                <div class="third-screen__card" style="--i: 0;">
+                <div class="third-screen__card education" style="--i: 0;">
                     <div class="third-screen__content" >
                         <div class="third-screen__descr" style="--j:1;">
                             <h2>карта образования</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, veniam! Placeat ducimus ad exercitationem suscipit explicabo quod veritatis, voluptatem cum, quae quasi accusantium porro recusandae earum eum. Dolores, earum dignissimos.</p>
+                            <p><span>Имею техническое,средне-специальное образование в областях электротехники и энергетики.</span></p>
+                            <p>Прошел переквалификацию в <b>Национальном Открытом Университете «ИНТУИТ»</b>Россия. </p>
+                            <p>Закончил курсы по направлению <span>`Web разработка`</span> на образовательной платформе  <b>GeekBrains</b> и <b>Udemy</b></p>
+                            <p>Продолжаю обучение на образовательной платформе <b>Udemy</b>.</p>
                         </div>
                     </div>
                 </div>
                 <div class="third-screen__card" style="--i: 1;">
                     <div class="third-screen__content" >
                         <div class="third-screen__descr" style="--j:2;">
-                            <h2>карта2</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, veniam! Placeat ducimus ad exercitationem suscipit explicabo quod veritatis, voluptatem cum, quae quasi accusantium porro recusandae earum eum. Dolores, earum dignissimos.</p>
+                            <h2>личная карта</h2>
+                            <div class="third-screen__personal">
+                                <div class="third-screen__personal-wrapper">
+                                    <ul>
+                                        <li><b>стрессоустойчивость</b></li>
+                                        <li>&#9733; &#9733; &#9733; &#9733; &#9734;</li>
+                                        <li><b>порядочность, честность</b></li>
+                                        <li>&#9733; &#9733; &#9733; &#9733; &#9734;</li>
+                                        <li><b>коммуникабельность</b></li>
+                                        <li>&#9733; &#9733; &#9733; &#9734; &#9734;</li>
+                                        <li><b>стремление к развитию</b></li>
+                                        <li>&#9733; &#9733; &#9733; &#9733; &#9734;</li>
+                                        <li><b>самостоятельность</b></li>
+                                        <li>&#9733; &#9733; &#9733; &#9734; &#9734;</li>
+                                        <li><b>целеустремленность</b></li>
+                                        <li>&#9733; &#9733; &#9733; &#9733; &#9733;</li>
+                                    </ul>
+                                </div>
+                                <div class="third-screen__personal-habits">
+                                    <img src="icons/habits/no-smoking.svg" alt="не курю" title="не курю">
+                                    <img src="icons/habits/no_drink.svg" alt="не употребляю спиртное" title="не употребляю спиртное">
+                                    <img src="icons/habits/hobby_activity.svg" alt="ЗОЖ" title="ЗОЖ">
+                                    <img src="icons/habits/family.svg" alt="семьнин" title="семьнин">
+                                    <img src="icons/habits/games.svg" alt="люблю играть в игры когда есть свободное время" title="люблю играть в игры когда есть свободное время">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="third-screen__text">
-                Я начинающий Web програмист. 
-                <p>Недавно я окончил обучению по HTML, CSS и поверхностно JavaScript.</p>
-                <p>На данный момент продолжаю обучение по полному курсу JavaScript+React.</p>
-                <p>Имею большой жизненный опыт, а так же желание работать в команде над проектами компании.</p>
-                <p>Готов реализовывать интересные и сложные проекты.</p>
-                </div> -->
             </div>
         </div>
 
@@ -377,17 +397,276 @@
         
         <div class="fifth-screen">
             <div class="fifth-screen__wrapper">
-                <!-- <div class="third-screen">
-                    <div class="third-screen__wrapper">
-                        <div class="container">
-                            <div class="third-screen__tw">
-                                <div class="third-screen__text">
-                                    <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur nobis iusto iure voluptates neque iste omnis ipsa inventore adipisci? Dicta rem dolores dignissimos expedita laboriosam sequi, itaque dolorem quam quasi!</h2>
+                <div class="container">
+                        <!-- <div class="fifth-screen__tw">
+                            <div class="fifth-screen__text">
+                                <h2>Здесь можно ознакомиться с моими сертификатами!!!</h2>
+                            </div>
+                        </div> -->
+                    <div class="fifth-screen__card">
+                            <div class="fifth-screen__imgBx">
+                                <img src="./img/documents/1180068.jpg"alt="">
+                            </div>
+                            <div class="fifth-screen__content">
+                                <div class="fifth-screen__productName">
+                                    <h3>GeekBrains</h3>
+                                </div>
+                                <div class="fifth-screen__price">
+                                    <h2>$html</h2>
+                                    <div class="fifth-screen__rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa gray fa-star" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="fifth-screen__card">
+                            <div class="fifth-screen__imgBx">
+                                <img src="./img/works/1.jpg" alt="">
+                                <ul class="action">
+                                    <li><i class="fa fa-heart" aria-hidden="true"></i>
+                                        <span>понравилось</span>
+                                    </li>
+                                    <li><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        <span>в корзину</span>
+                                    </li>
+                                    <li><i class="fa fa-eye" aria-hidden="true"></i>
+                                        <span>посмотреть</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fifth-screen__content">
+                                <div class="fifth-screen__productName">
+                                    <h3>GeekBrains</h3>
+                                </div>
+                                <div class="fifth-screen__price">
+                                    <h2>$html</h2>
+                                    <div class="fifth-screen__rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa gray fa-star" aria-hidden="true"></i>
+                                        <i class="fa gray fa-star" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                
+                    <div class="fifth-screen__card">
+                            <div class="fifth-screen__imgBx">
+                                <img src="./img/works/book.svg" alt="">
+                            </div>
+                            <div class="fifth-screen__content">
+                                <div class="fifth-screen__productName">
+                                    <h3>GeekBrains</h3>
+                                </div>
+                                <div class="fifth-screen__price">
+                                    <h2>$html</h2>
+                                    <div class="fifth-screen__rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="fifth-screen__card">
+                            <div class="fifth-screen__imgBx">
+                                <img src="./img/works/2.jpg" alt="">
+                            </div>
+                            <div class="fifth-screen__content">
+                                <div class="fifth-screen__productName">
+                                    <h3>GeekBrains</h3>
+                                </div>
+                                <div class="fifth-screen__price">
+                                    <h2>$html</h2>
+                                    <div class="fifth-screen__rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="fifth-screen__card">
+                            <div class="fifth-screen__imgBx">
+                                <img src="./img/works/1.jpg" alt="">
+                            </div>
+                            <div class="fifth-screen__content">
+                                <div class="fifth-screen__productName">
+                                    <h3>GeekBrains</h3>
+                                </div>
+                                <div class="fifth-screen__price">
+                                    <h2>$html</h2>
+                                    <div class="fifth-screen__rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="fifth-screen__card">
+                        <div class="fifth-screen__imgBx">
+                            <img src="./img/works/1.jpg" alt="">
+                        </div>
+                        <div class="fifth-screen__content">
+                            <div class="fifth-screen__productName">
+                                <h3>GeekBrains</h3>
+                            </div>
+                            <div class="fifth-screen__price">
+                                <h2>$html</h2>
+                                <div class="fifth-screen__rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> -->
+
+                    <div class="fifth-screen__card">
+                            <div class="fifth-screen__imgBx">
+                                <img src="./img/works/1.jpg" alt="">
+                            </div>
+                            <div class="fifth-screen__content">
+                                <div class="fifth-screen__productName">
+                                    <h3>GeekBrains</h3>
+                                </div>
+                                <div class="fifth-screen__price">
+                                    <h2>$html</h2>
+                                    <div class="fifth-screen__rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="fifth-screen__card">
+                            <div class="fifth-screen__imgBx">
+                                <img src="./img/works/1.jpg" alt="">
+                            </div>
+                            <div class="fifth-screen__content">
+                                <div class="fifth-screen__productName">
+                                    <h3>GeekBrains</h3>
+                                </div>
+                                <div class="fifth-screen__price">
+                                    <h2>$html</h2>
+                                    <div class="fifth-screen__rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="fifth-screen__card">
+                            <div class="fifth-screen__imgBx">
+                                <img src="./img/works/1.jpg" alt="">
+                            </div>
+                            <div class="fifth-screen__content">
+                                <div class="fifth-screen__productName">
+                                    <h3>GeekBrains</h3>
+                                </div>
+                                <div class="fifth-screen__price">
+                                    <h2>$html</h2>
+                                    <div class="fifth-screen__rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="fifth-screen__card">
+                            <div class="fifth-screen__imgBx">
+                                <img src="./img/works/1.jpg" alt="">
+                            </div>
+                            <div class="fifth-screen__content">
+                                <div class="fifth-screen__productName">
+                                    <h3>GeekBrains</h3>
+                                </div>
+                                <div class="fifth-screen__price">
+                                    <h2>$html</h2>
+                                    <div class="fifth-screen__rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="fifth-screen__card">
+                            <div class="fifth-screen__imgBx">
+                                <img src="./img/works/1.jpg" alt="">
+                            </div>
+                            <div class="fifth-screen__content">
+                                <div class="fifth-screen__productName">
+                                    <h3>GeekBrains</h3>
+                                </div>
+                                <div class="fifth-screen__price">
+                                    <h2>$html</h2>
+                                    <div class="fifth-screen__rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="fifth-screen__card">
+                        <div class="fifth-screen__imgBx">
+                            <img src="./img/works/1.jpg" alt="">
+                        </div>
+                        <div class="fifth-screen__content">
+                            <div class="fifth-screen__productName">
+                                <h3>GeekBrains</h3>
+                            </div>
+                            <div class="fifth-screen__price">
+                                <h2>$html</h2>
+                                <div class="fifth-screen__rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
                 <!-- <div class="fifth-screen__box">
                             <div class="fifth-screen__textBox">
                                 <div class="fifth-screen__textRotation">
@@ -405,6 +684,7 @@
                                 <img src="./img/bgd1.png" alt="">
                             </div>
                         </div>  -->
+                </div>        
             </div>
         </div>
 
