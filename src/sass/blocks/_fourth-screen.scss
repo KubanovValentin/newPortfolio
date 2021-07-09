@@ -6,8 +6,8 @@
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        background: #350048;
-
+        // background: #350048;
+        background:url(../../img/bgM.jpg) no-repeat;
     }
     &__info {
         margin-top: 20px;
@@ -33,6 +33,7 @@
         text-align: center;
         z-index: 10;
         margin: 20px 20px 60px;
+        backdrop-filter: blur(10px);
         // &::before {
         //     content:'';
         //     position: absolute;
@@ -133,7 +134,7 @@
             }
             svg {
                 circle {
-                    stroke-dashoffset:  calc(440px - (440px * 60) / 100);
+                    stroke-dashoffset:  calc(440px - (440px * 78) / 100);
                 }
             }
         }
@@ -169,7 +170,7 @@
         }
         &:nth-child(11) {
             .bgd{
-                background:#00e485;
+                background:#9ca7a2;
             }
             svg {
                 circle {
@@ -184,6 +185,26 @@
             svg {
                 circle {
                     stroke-dashoffset:  calc(440px - (440px * 90) / 100);
+                }
+            }
+        }
+        &:nth-child(13) {
+            .bgd{
+                background:#560599;
+            }
+            svg {
+                circle {
+                    stroke-dashoffset:  calc(440px - (440px * 47) / 100);
+                }
+            }
+        }
+        &:nth-child(14) {
+            .bgd{
+                background:#266ac3;
+            }
+            svg {
+                circle {
+                    stroke-dashoffset:  calc(440px - (440px * 51) / 100);
                 }
             }
         }
@@ -231,10 +252,10 @@
     &__text {
         position: absolute;
         left: 50%;
-        bottom: -42px;
+        bottom: -25px;
         transform: translateX(-50%);
         text-align: center;
-        padding: 30px 20px 40px;
+        padding: 15px 20px 20px;
         z-index: 1;
         color:white;
         background:red;

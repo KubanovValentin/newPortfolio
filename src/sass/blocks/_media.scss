@@ -27,8 +27,26 @@
             margin-top: 100px;
         }
     }
+    .fifth-screen {
+        &__textAct {
+            display: none;
+        }
+        &__text {
+            display: block;
+        }
+    }
 }
-
+@media (max-width:767px) {
+    .fifth-screen {
+        
+        &__text {
+            display: block;
+            h2 {
+                font-size: 3rem;
+            }
+        }
+    }
+}
 
 
 @media (max-width:575px) {
@@ -39,7 +57,7 @@
         &__wrapper {
             &:hover {
                 .third-screen__card {
-                    height: 600px;
+                    height: auto;
                     .third-screen__descr {
                         opacity: 1;
                     }
@@ -51,5 +69,12 @@
             height: 300px;
         }
     }
-    
+    .fifth-screen {
+        &__text {
+            h2 {
+                font-size: 2.3rem;
+            }
+            
+        }
+    }
 }

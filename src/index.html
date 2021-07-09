@@ -43,6 +43,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-icon-180x180.png">
     <link rel="icon" type="image/png" sizes="192x192" href="icons/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="icons/favicon/android-icon-144x144.png">
     <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
     <link rel="manifest" href="icons/favicon/manifest.json">
@@ -51,6 +52,7 @@
     <meta name="theme-color" content="#ffffff">
 
 
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.min.css">
@@ -58,16 +60,16 @@
 
 <body>
 
-    <!-- <section id="first" class="first-screen">
+    <section id="first" class="first-screen">
         <div class="first-screen__wrapper">
             <div class="container">
                 <h2 class="first-screen__title"><span>Внимание!!!</span><br>Загрузка нужного Вам специалиста завершеннa!!!</h2>
             </div>
             <button onclick="hideshow();">Button<svg><rect></rect></svg></button>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section id="second" class="second-screen">
+    <section id="second" class="second-screen">
         <div class="second-screen__wrapper">
             <div class="container">
                 <div class="second-screen__text">
@@ -115,7 +117,7 @@
                     </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <section id="common" class="common-screen">
         <div class="third-screen">
@@ -184,11 +186,6 @@
                 <div class="fourth-screen__info">SkillS</div>
                 <div class="container">
                     <div class="fourth-screen__card">
-                        <div class="third-screen__tw">
-                            <div class="third-screen__text">
-                                <h2>Я начинающий Web-програмист</h2>
-                            </div>
-                        </div>
                         <div class="fourth-screen__box">
                             <div>
                                 <div class="fourth-screen__percent">
@@ -299,7 +296,7 @@
                                         <circle cx="70" cy="70" r="70"></circle>
                                     </svg>
                                     <div class="fourth-screen__number">
-                                        <h2 class="fourth-screen__nmb">60<span>%</span> </h2>
+                                        <h2 class="fourth-screen__nmb">78<span>%</span> </h2>
                                     </div>
                                 </div>
                             </div>
@@ -391,18 +388,55 @@
                         </div>
                         <div class="fourth-screen__text bgd">AVOCODE</div>
                     </div>
+
+                    <div class="fourth-screen__card">
+                        <div class="fourth-screen__box">
+                            <div>
+                                <div class="fourth-screen__percent">
+                                    <svg>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                    </svg>
+                                    <div class="fourth-screen__number">
+                                        <h2 class="fourth-screen__nmb">47<span>%</span> </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fourth-screen__text bgd">BOOTSTRAP</div>
+                    </div>
+
+                    <div class="fourth-screen__card">
+                        <div class="fourth-screen__box">
+                            <div>
+                                <div class="fourth-screen__percent">
+                                    <svg>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                    </svg>
+                                    <div class="fourth-screen__number">
+                                        <h2 class="fourth-screen__nmb">51<span>%</span> </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fourth-screen__text bgd">JQUERY</div>
+                    </div>
                 </div>
             </div>
         </div>
         
-        <div class="fifth-screen">
+        <div id="fifth-screen" class="fifth-screen">
+            <div class="fifth-screen__tw">
+                <div class="fifth-screen__textAct">
+                    <h2>certificate</h2>
+                </div>
+                <div class="fifth-screen__text">
+                    <h2>certificate</h2>
+                </div>
+            </div>
             <div class="fifth-screen__wrapper">
                 <div class="container">
-                        <!-- <div class="fifth-screen__tw">
-                            <div class="fifth-screen__text">
-                                <h2>Здесь можно ознакомиться с моими сертификатами!!!</h2>
-                            </div>
-                        </div> -->
                     <div class="fifth-screen__card">
                             <div class="fifth-screen__imgBx">
                                 <img src="./img/documents/1180068.jpg"alt="">
@@ -426,16 +460,19 @@
 
                     <div class="fifth-screen__card">
                             <div class="fifth-screen__imgBx">
-                                <img src="./img/works/1.jpg" alt="">
+                                <img class="" src="./img/works/1.jpg" alt="">
                                 <ul class="action">
-                                    <li><i class="fa fa-heart" aria-hidden="true"></i>
-                                        <span>понравилось</span>
+                                    <li> 
+                                        <a  class="fifth-screen__heart" onclick=changeBg() href="#fifth-screen"><i class="fa fa-heart" aria-hidden="true"></i>
+                                        <span>понравилось</span></a> 
                                     </li>
-                                    <li><i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                        <span>в корзину</span>
+                                    <li> 
+                                        <a class="fifth-screen__cart" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        <span>проверка</span></a> 
                                     </li>
-                                    <li><i class="fa fa-eye" aria-hidden="true"></i>
-                                        <span>посмотреть</span>
+                                    <li>
+                                        <a class="fifth-screen__eye" href="#"><i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span>посмотреть</span></a>   
                                     </li>
                                 </ul>
                             </div>
@@ -479,7 +516,7 @@
 
                     <div class="fifth-screen__card">
                             <div class="fifth-screen__imgBx">
-                                <img src="./img/works/2.jpg" alt="">
+                                <img src="./img/works/3.jpg" alt="">
                             </div>
                             <div class="fifth-screen__content">
                                 <div class="fifth-screen__productName">
@@ -665,9 +702,73 @@
                             </div>
                         </div>
                     </div>
+                </div>        
+            </div>
+        </div>
 
-                    
-                <!-- <div class="fifth-screen__box">
+        <div class="sixth-screen">
+            <div class="sixth-screen__wrapper">
+                <div class="conteiner">
+                    <div class="sixth-screen__slip">
+                        <div class="sixth-screen__content">
+                            <h2 class="sixth-screen__title">01</h2>
+                            <h3 class="sixth-screen__subtitle">сайт 1</h3>
+                            <p class="sixth-screen__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, beatae ea sapiente expedita qui minus alias nostrum dignissimos ratione, quia odio laborum voluptatum. Expedita dolor tempora, voluptate animi at tempore.</p>
+                            <a href="#" class="sixth-screen__project">перейти</a>
+                        </div>
+                    </div>
+
+                    <div class="sixth-screen__slip">
+                        <div class="sixth-screen__content">
+                            <h2 class="sixth-screen__title">02</h2>
+                            <h3 class="sixth-screen__subtitle">сайт 2</h3>
+                            <p class="sixth-screen__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, beatae ea sapiente expedita qui minus alias nostrum dignissimos ratione, quia odio laborum voluptatum. Expedita dolor tempora, voluptate animi at tempore.</p>
+                            <a href="#" class="sixth-screen__project">перейти</a>
+                        </div>
+                    </div>
+
+                    <div class="sixth-screen__slip">
+                        <div class="sixth-screen__content">
+                            <h2 class="sixth-screen__title">03</h2>
+                            <h3 class="sixth-screen__subtitle">сайт 3</h3>
+                            <p class="sixth-screen__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, beatae ea sapiente expedita qui minus alias nostrum dignissimos ratione, quia odio laborum voluptatum. Expedita dolor tempora, voluptate animi at tempore.</p>
+                            <a href="#" class="sixth-screen__project">перейти</a>
+                        </div>
+                    </div>
+
+                    <div class="sixth-screen__slip" data-tilt data-tilt-glare data-tilt-max-glare="0.8>
+                        <div class="sixth-screen__content">
+                            <h2 class="sixth-screen__title">04</h2>
+                            <h3 class="sixth-screen__subtitle">сайт 4</h3>
+                            <p class="sixth-screen__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, beatae ea sapiente expedita qui minus alias nostrum dignissimos ratione, quia odio laborum voluptatum. Expedita dolor tempora, voluptate animi at tempore.</p>
+                            <a href="#" class="sixth-screen__project">перейти</a>
+                        </div>
+                    </div>
+
+                    <div class="sixth-screen__slip">
+                        <div class="sixth-screen__content">
+                            <h2 class="sixth-screen__title">05</h2>
+                            <h3 class="sixth-screen__subtitle">сайт 5</h3>
+                            <p class="sixth-screen__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, beatae ea sapiente expedita qui minus alias nostrum dignissimos ratione, quia odio laborum voluptatum. Expedita dolor tempora, voluptate animi at tempore.</p>
+                            <a href="#" class="sixth-screen__project">перейти</a>
+                        </div>
+                    </div>
+
+                    <div class="sixth-screen__slip">
+                        <div class="sixth-screen__content">
+                            <h2 class="sixth-screen__title">06</h2>
+                            <h3 class="sixth-screen__subtitle">сайт 6</h3>
+                            <p class="sixth-screen__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, beatae ea sapiente expedita qui minus alias nostrum dignissimos ratione, quia odio laborum voluptatum. Expedita dolor tempora, voluptate animi at tempore.</p>
+                            <a href="#" class="sixth-screen__project">перейти</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        
+    </section>    
+
+    <!-- <div class="fifth-screen__box">
                             <div class="fifth-screen__textBox">
                                 <div class="fifth-screen__textRotation">
                                     <h2>MagiC</h2>
@@ -684,18 +785,74 @@
                                 <img src="./img/bgd1.png" alt="">
                             </div>
                         </div>  -->
-                </div>        
-            </div>
-        </div>
-
-    </section>    
 
     
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script> -->
+    <script src="js/vanilla-tilt.js"></script>
     <script src="js/anime.min.js"></script>
     <script src="js/script.js"></script>
 </html>
 
 
+<!-- <div class="sixth-screen">
+    <div class="container">
+        <div class="sixth-screen__item">
+            <div class="sixth-screen__item-img">
+                <img src="./img/2.png" alt="">
+            </div>
+            <div class="sixth-screen__infoText">
+                <h2>card one</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quis voluptatum dolor atque placeat tempore sequi nesciunt nam sed repudiandae odio dolorem aut, quisquam ut maxime delectus odit explicabo amet.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quis voluptatum dolor atque placeat tempore sequi nesciunt nam sed repudiandae odio dolorem aut, quisquam ut maxime delectus odit explicabo amet.</p>
+            </div>
+        </div>
 
+        <div class="sixth-screen__item">
+            <div class="sixth-screen__item-img">
+                <img src="./img/2.png" alt="">
+            </div>
+            <div class="sixth-screen__infoText">
+                <h2>card one</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quis voluptatum dolor atque placeat tempore sequi nesciunt nam sed repudiandae odio dolorem aut, quisquam ut maxime delectus odit explicabo amet.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quis voluptatum dolor atque placeat tempore sequi nesciunt nam sed repudiandae odio dolorem aut, quisquam ut maxime delectus odit explicabo amet.</p>
+            </div>
+        </div>
+
+        <div class="sixth-screen__item">
+            <div class="sixth-screen__item-img">
+                <img src="./img/2.png" alt="">
+            </div>
+            <div class="sixth-screen__infoText">
+                <h2>card one</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quis voluptatum dolor atque placeat tempore sequi nesciunt nam sed repudiandae odio dolorem aut, quisquam ut maxime delectus odit explicabo amet.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quis voluptatum dolor atque placeat tempore sequi nesciunt nam sed repudiandae odio dolorem aut, quisquam ut maxime delectus odit explicabo amet.</p>
+            </div>
+        </div>
+
+        <div class="sixth-screen__item">
+            <div class="sixth-screen__item-img">
+                <img src="./img/2.png" alt="">
+            </div>
+            <div class="sixth-screen__infoText">
+                <h2>card one</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quis voluptatum dolor atque placeat tempore sequi nesciunt nam sed repudiandae odio dolorem aut, quisquam ut maxime delectus odit explicabo amet.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quis voluptatum dolor atque placeat tempore sequi nesciunt nam sed repudiandae odio dolorem aut, quisquam ut maxime delectus odit explicabo amet.</p>
+            </div>
+        </div>
+
+        <div class="sixth-screen__item">
+            <div class="sixth-screen__item-img">
+                <img src="./img/2.png" alt="">
+            </div>
+            <div class="sixth-screen__infoText">
+                <h2>card one</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quis voluptatum dolor atque placeat tempore sequi nesciunt nam sed repudiandae odio dolorem aut, quisquam ut maxime delectus odit explicabo amet.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quis voluptatum dolor atque placeat tempore sequi nesciunt nam sed repudiandae odio dolorem aut, quisquam ut maxime delectus odit explicabo amet.</p>
+            </div>
+        </div>
+
+        <div class="sixth-screen__item">
+            <div class="sixth-screen__item-img">
+                <img src="./img/2.png" alt="">
+            </div>
+            <div class="sixth-screen__infoText">
+                <h2>card one</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quis voluptatum dolor atque placeat tempore sequi nesciunt nam sed repudiandae odio dolorem aut, quisquam ut maxime delectus odit explicabo amet.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quis voluptatum dolor atque placeat tempore sequi nesciunt nam sed repudiandae odio dolorem aut, quisquam ut maxime delectus odit explicabo amet.</p>
+            </div>
+        </div>
+    </div>
+</div> -->
