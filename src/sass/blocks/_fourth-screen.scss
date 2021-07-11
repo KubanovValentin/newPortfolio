@@ -7,7 +7,9 @@
         align-items: center;
         min-height: 100vh;
         // background: #350048;
-        background:url(../../img/bgM.jpg) no-repeat;
+        background:url(../img/bgM.jpg) no-repeat ;
+        background-size: cover;
+
     }
     &__info {
         margin-top: 20px;

@@ -64,7 +64,7 @@ function hideShow() {
         translateX : 0,
         translateY : 0,
         duration: 1000,
-        delay: anime.stagger(1),
+        delay: anime.stagger(10),
     })
     .add({
         rotate : function(){
@@ -104,4 +104,3 @@ VanillaTilt.init(document.querySelectorAll(".sixth-screen__slip"),{
     // max-glare : 1,
     // "glare-prerender":true,
 });
-VanillaTilt.init(document.querySelectorAll(".sixth-screen__slip"));

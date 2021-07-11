@@ -1,3 +1,65 @@
+@media (max-width:1200px) {
+    .first-screen {
+        &__wrapper {
+            button {
+                font-size: 1em;
+                padding: 1em 2.6em;
+                svg {
+                    width: 13em;
+                    height: 3em;
+                    rect {
+                        stroke-width: 9px;
+                        width: 13em;
+                        height: 3em;
+                    }
+                }
+            }
+        }
+    }
+    .second-screen {
+        &__items {
+            width: 205px;
+            height: 205px;
+        }
+        &__item {
+            transform-origin: 0 100px;
+        }
+        &__Go-Go {
+            font-size: 1.5em;
+        }
+    }
+    .seventh-screen {
+        &__title {
+            font-size: 3em;
+
+        }
+        .container {
+            margin-top: 130px;
+            width: 90%;
+            min-width: auto;
+            margin: 20px;
+            display: flex;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+        }
+        &__contactInfo {
+            top: 0;
+            height: 550px;
+            position: relative;
+            box-shadow:none;
+        }
+        &__contactForm {
+            position: relative;
+            width: calc(100% - 350px);
+            padding-left: 0;
+            margin-left: 0;
+            padding: 30px;
+            height: 550px;
+            box-shadow:none;
+        }
+    }
+}
+
+
 @media (max-width:991px) {
     .third-screen {
         &::before {
@@ -35,8 +97,59 @@
             display: block;
         }
     }
+    .seventh-screen {
+        background: #fff38e;
+        &__title {
+            text-align: center;
+            font-size: 2.8em;
+            -webkit-text-stroke: 0.5px #050505;
+            color: #095a55;
+            span {
+                color: rgb(255, 166, 0);
+            }
+        }
+        &:before {
+            display: none;
+        }
+        .container {
+            width: 700px;
+            flex-direction: column-reverse;
+        }
+        &__contactInfo {
+            width: auto;
+            height: auto;
+            flex-direction: row;
+            align-items: center;
+        }
+        &__contactForm {
+            width: auto;
+            height: auto;
+        }
+    }
 }
 @media (max-width:767px) {
+    .first-screen {
+        &__title  {
+            font-size: 1.2em;
+            text-align: center;
+            span {
+                font-size: 2.1em;
+            }
+        }
+        button {
+            font-size: 1em;
+            padding: 1em 2.6em;
+            svg {
+                width: 13em;
+                height: 3em;
+                rect {
+                    stroke-width: 9px;
+                    width: 13em;
+                    height: 3em;
+                }
+            }
+        }
+    }
     .fifth-screen {
         
         &__text {
@@ -46,13 +159,42 @@
             }
         }
     }
+    .seventh-screen {
+        &__title {
+            text-align: center;
+            font-size: 2.5em;
+            -webkit-text-stroke: 0.5px #050505;
+            color: #095a55;
+            span {
+                color: rgb(255, 166, 0);
+            }
+        }
+        .container {
+            width: 600px;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+
+        }
+        .formBox {
+            flex-direction: column;
+            align-items: flex-start;
+            .inputBox {
+                width: 100%;
+            }
+        }
+        &__contactForm {
+            width: 70%;
+        }
+        
+    }
 }
 
 
 @media (max-width:575px) {
     .third-screen {
         &__info {
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
         &__wrapper {
             &:hover {
@@ -76,5 +218,43 @@
             }
             
         }
+    }
+    .seventh-screen {
+        &__title {
+            text-align: center;
+            font-size: 1.7em;
+            -webkit-text-stroke: 0.5px #050505;
+            color: #095a55;
+            span {
+                color: rgb(255, 166, 0);
+            }
+        }
+        .container {
+            width: 300px;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            
+
+        }
+        &__contactInfo {
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+            width: 90%;
+        }
+        .formBox {
+            flex-direction: column;
+            align-items: flex-start;
+            .inputBox {
+                width: auto;
+            }
+            .buttom {
+                text-align: center;
+                width: 100%;
+                
+            }
+        }
+        
     }
 }

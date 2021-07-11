@@ -34,15 +34,15 @@
         display: flex;
         flex-direction: column;
         align-items:center;
-        font-size: 3vw;
-        line-height: 0.6em;
+        font-size: 2em;
+        line-height: 1.6em;
         z-index: 1000;
         font-weight: 400;
         color: #12F8F5;
         text-shadow: -1px 0 white, 0 1px black, 1px 0 black, 0 -1px black;
         span {
             color: red;
-            font-size: 5vw;
+            font-size: 3em;
             text-transform: uppercase;
             font-weight: bold;
         }
@@ -54,9 +54,9 @@
         position: relative;
         z-index: 1;
         line-height: 1vw;
-        width: 13vw;
-        height: 3vw;
-        top: 7vw;
+        width: 13em;
+        height: 3em;
+        top: 9em;
         font-size: 1vw;
         text-transform: uppercase;
         font-weight: bold;
