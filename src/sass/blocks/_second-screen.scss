@@ -34,10 +34,14 @@
         margin: 0;
         -webkit-box-reflect: below -6vw linear-gradient(transparent, #0008);
         text-shadow: 0 0 10px #f10505,
-        0 0 40px #ec4a0a,
-        0 0 80px #ff8c3b,
-        0 0 160px #ec4a0a,
-        0 0 240px #ff8c3b,
+                        0 0 40px #ec4a0a,
+                        0 0 80px #ff8c3b,
+                        0 0 160px #ec4a0a,
+                        0 0 240px #ff8c3b;
+        &_dw {
+            display: none;
+            
+        }                
     }
     &__direction {
         filter: url(#ice);
@@ -79,6 +83,11 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            box-shadow: 10px 0 10px black,
+                        0 0 40px #000000,
+                        0 0 80px #000000,
+                        0 0 160px #000000,
+                        0 0 240px #000000;
             &:nth-child(2){
                 opacity: 0.4;
                 mix-blend-mode: multiply;

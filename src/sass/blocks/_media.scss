@@ -18,11 +18,11 @@
     }
     .second-screen {
         &__items {
-            width: 205px;
-            height: 205px;
+            width: 180px;
+            height: 180px;
         }
         &__item {
-            transform-origin: 0 100px;
+            transform-origin: 0 90px;
         }
         &__Go-Go {
             font-size: 1.5em;
@@ -61,6 +61,44 @@
 
 
 @media (max-width:991px) {
+    .second-screen {
+        &__wrapper {
+            padding-top: 17em ;
+            padding-bottom: 5em;
+        }
+        &__blocks {
+            top: -1em;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 10px 0 10px black,
+                        0 0 40px #000000,
+                        0 0 80px #000000,
+                        0 0 160px #000000,
+                        0 0 240px #000000,
+        }
+        &__btn {
+            margin-top: 30px;
+        }
+        &__name,
+        &__direction,
+        &__descr {
+            text-align: center;
+            font-size: 4em;
+            line-height: 1.3em;
+            -webkit-box-reflect:unset;
+        }
+        &__items {
+            width: 120px;
+            height: 120px;
+        }
+        &__item {
+            transform-origin: 0 60px;
+        }
+        &__Go-Go {
+            font-size: 0.9em;
+        }
+    }   
+
     .third-screen {
         &::before {
             clip-path: circle(0vw at center);
@@ -150,6 +188,17 @@
             }
         }
     }
+    .second-screen {
+        &__blocks {
+            width: 25vw;
+            height: 34vw;
+            box-shadow: 0 0 10px #00000088,
+                    0 0 40px #000000,
+                    0 0 80px #000000,
+                    0 0 160px #000000,
+                    0 0 240px #000000,
+        }
+    }
     .fifth-screen {
         
         &__text {
@@ -209,6 +258,30 @@
         &__card {
             width: 208px;
             height: 300px;
+        }
+    }
+    .second-screen {
+        &__wrapper {
+            padding-top: 25em ;
+            padding-bottom: 5em;
+        }
+        &__blocks {
+            width: 15em;
+            height: 20em;
+        }
+        &__name {
+            display: none;
+            &_dw {
+                display: block;
+                text-align: center;
+                font-size: 2.5em;
+            }
+        }
+        &__direction {
+            font-size: 2.5em;
+        }
+        &__descr {
+            font-size: 2.5em;
         }
     }
     .fifth-screen {
