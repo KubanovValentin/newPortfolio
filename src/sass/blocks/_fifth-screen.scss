@@ -77,9 +77,9 @@
             height: 100%;
             object-fit: contain;
             transition: 0.5s ease-in-out;
-            &:hover {
-                transform: scale(2);
-            }
+            // &:hover {
+            //     transform: scale(5);
+            // }
         }
         .action {
             position: absolute;
@@ -118,6 +118,9 @@
                 a {
                     color:#333;
                     // &:focus {
+                    //     color:#ff2020;
+                    // }
+                    // &:active {
                     //     color:#ff2020;
                     // }
                 }
@@ -171,6 +174,7 @@
     }
     &__price {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items:center;
         h2 {
@@ -179,8 +183,16 @@
             font-weight: 500;
         }
         .fa {
-            color: #ffd513;
+            // color: #ffd513;
             cursor: pointer;
+            &:active {
+                color:#ff2020;
+            }
+        }
+        .fa-heart {
+            &:active {
+                color:#ff2020;
+            }
         }
         .gray {
             color: gray;

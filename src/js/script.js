@@ -92,10 +92,24 @@ function hideShow() {
 
 // 
 
-function changeBg() {
-    document.querySelector(".fifth-screen__heart ").style.background = "#ff2020";
+// function changeBg() {
+//     document.querySelector(".fa ").style.color = "#ff2020";
     
-}
+// }
+// $(document).ready(function(){
+//     $(".fifth-screen__heart").on("click", function() {
+//       if($(this).attr("title")=="Добавить в избранное") {
+//          $(".fa-heart").css({color : "#f71e1e"});
+//          $(this).attr("title","Удалить из избранного");
+//       } else  {
+//          $(".fa-heart").css({color : "#333333"});
+//          $(this).attr("title","Добавить в избранное");
+//       }
+//     });
+//     });
+
+// 
+
 
 VanillaTilt.init(document.querySelectorAll(".sixth-screen__slip"),{
     max: 50,
