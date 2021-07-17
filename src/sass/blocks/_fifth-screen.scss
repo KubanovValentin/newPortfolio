@@ -63,6 +63,49 @@
                 }
             }
         }
+        button {
+            background:#fff;
+            border:none;
+        }
+    }
+
+    &__overlay {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.56);
+        z-index: 20;
+        
+    }
+    &__overlayWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        
+    }
+    &__imageEnlarged {
+        position: relative;
+        width: 600px;
+        display: flex;
+        align-items: flex-start;
+        img {
+            width: 100%;
+            // transform: translate(-50%, -50%);
+        }
+        button {
+            background-color: rgba(0,0,0,0);
+            .fa-times {
+                color: #ff0000;
+            }
+        }
+    }
+    &__btnHide button{
+        border:none;
+        display:none;
     }
     &__imgBx {
         position: relative;
@@ -105,6 +148,10 @@
                     transition-delay: 0.3s;
                 }
                 &:hover {
+                    button {
+                        background: #ff2020;
+                        color: #fff;
+                    }
                     background: #ff2020;
                     color: #fff;
                     span {

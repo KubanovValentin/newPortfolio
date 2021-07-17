@@ -1,0 +1,212 @@
+.communication-screen {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    background:#091921;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    &__clock {
+        padding: 25px;
+        display: flex;
+        justify-content: flex-end;
+        align-items:flex-start;
+        .clock {
+            width: 250px;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(../img/clock/clockL.png);
+            border: 4px solid #091921;
+            box-shadow: 0 -15px 15px rgba(255,255,255,0.05),
+                        inset 0 -15px 15px rgba(255,255,255,0.05),
+                        0 15px 15px rgba(0, 0, 0, 0.3),
+                        inset 0 15px 15px rgba(0,0,0,0.3);
+            border-radius: 50%;            
+            &::before {
+                content:'';
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background: rgb(239, 255, 16);
+                border-radius:50%;
+                z-index: 1000;
+            }
+            .hour,
+            .min,
+            .sec {
+                position: absolute;
+            }
+            .hour,
+            .hr {
+                width: 190px;
+                height: 190px;
+            }
+            .min,
+            .mn {
+                width: 180px;
+                height: 180px;
+            }
+            .min,
+            .mn {
+                width: 230px;
+                height: 230px;
+            }
+            .hr,
+            .mn,
+            .sc {
+                display: flex;
+                justify-content: center;
+                // align-items:center;
+                position: absolute;
+                border-radius: 50%;
+            }
+            .hr {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 8px;
+                    height: 110px;
+                    background: #f80404;
+                    z-index: 10;
+                    border-radius: 6px 6px 0 0;
+                }
+            }
+            .mn {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 4px;
+                    height: 110px;
+                    background: rgb(5, 36, 211);
+                    z-index: 11;
+                    border-radius: 6px 6px 0 0;
+                }
+            }
+            .sc {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 2px;
+                    height: 90px;
+                    background: rgb(4, 143, 108);
+                    z-index: 12;
+                    border-radius: 6px 6px 0 0;
+                }
+            }
+        }
+    }
+    &__cup {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        min-height: 100vh;
+        .container {
+            position: relative;
+            top: 50px;
+            .cup {
+                position: relative;
+                width: 250px;
+                height: 250px;
+                background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+                border-bottom-left-radius: 45%;
+                border-bottom-right-radius: 45%;
+                .cupTop {
+                    position: absolute;
+                    top: -30px;
+                    left: 0;
+                    width: 100%;
+                    height: 60px;
+                    background:linear-gradient(to right, #f9f9f9, #d9d9d9);
+                    border-radius: 50%;
+                }
+                .vapour {
+                    position: relative;
+                    display: flex;
+                    z-index: 1;
+                    // padding: 0 20px;
+                    span {
+                        position: relative;
+                        bottom: 50px;
+                        display: block;
+                        margin: 0 2px 50px;
+                        min-width: 8px;
+                        height: 120px;
+                        background:#fff;
+                        border-radius: 50%;
+                        animation: animaiteVapour 5s linear infinite;
+                        opacity: 0;
+                        filter: blur(8px);
+                        animation-delay: calc(var(--i)* -0.5s);
+                    }
+                }
+            
+                .cupCircle {
+                    position: absolute;
+                    top: 5px;
+                    left: 10px;
+                    width: calc(100% - 20px);
+                    height: 50px;
+                    background:linear-gradient(to left, #f9f9f9, #d9d9d9);
+                    border-radius: 50%;
+                    box-sizing: border-box;
+                    overflow: hidden;
+                }
+                .cupTea {
+                    position: absolute;
+                    top: 20px;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background:linear-gradient(#382923, #8b4a33);
+                    border-radius: 50%;
+                }
+                .cupHandle {
+                    position: absolute;
+                    right: -70px;
+                    top: 10px;
+                    width: 100px;
+                    height: 120px;
+                    border: 25px solid #dcdcdc;
+                    // border: 25px solid #dd0f0f;
+                    border-left: 25px solid transparent;
+                    border-bottom: 25px solid transparent;
+                    border-radius: 50%;
+                    transform: rotate(42deg);
+                }
+            }
+            .plate {
+                position: absolute;
+                bottom: -50px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 500px;
+                height: 200px;
+                background:linear-gradient(to right, #f9f9f9, #e7e7e7);
+                border-radius: 50%;
+                // border: 10px solid #999696;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    right: 10px;
+                    bottom: 10px;
+                    border-radius: 50%;
+                    background:linear-gradient(to left, #f9f9f9, #e7e7e7);
+                }
+                &::after {
+                    content:'';
+                    position: absolute;
+                    top: 30px;
+                    left: 30px;
+                    right: 30px;
+                    bottom: 30px;
+                    background: radial-gradient(rgba(0,0,0,0.2)30%, transparent, transparent);
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

@@ -131,7 +131,7 @@
                             <h2>карта реальности</h2>
                             <p>Я <i>начинающий</i> Web программист.</p>
                             <p>Недавно я окончил обучению по <b>HTML</b>, <b>CSS</b> и поверхностно <b>JavaScript</b>.</p>
-                            <p>На данный момент продолжаю обучение по полному курсу <b>JavaScript</b>+<b>React</b>.</p>
+                            <p>На данный момент я фрилансер, но продолжаю обучение по полному курсу <b>JavaScript</b>+<b>React</b>.</p>
                             <p>Имею большой жизненный опыт, а так же желание работать в команде над проектами компании.</p>
                             <p> <span>Готов реализовывать интересные и сложные проекты!</span></p>
                         </div>
@@ -142,7 +142,7 @@
                         <div class="third-screen__descr" style="--j:1;">
                             <h2>карта образования</h2>
                             <p><span>Имею техническое,средне-специальное образование в областях электротехники и энергетики.</span></p>
-                            <p>Прошел переквалификацию в <b>Национальном Открытом Университете «ИНТУИТ»</b>Россия. </p>
+                            <p>Прошел повышение квалификации по программе в <b>Национальном Открытом Университете «ИНТУИТ»</b>Россия. </p>
                             <p>Закончил курсы по направлению <span>`Web разработка`</span> на образовательной платформе  <b>GeekBrains</b> и <b>Udemy</b></p>
                             <p>Продолжаю обучение на образовательной платформе <b>Udemy</b>.</p>
                         </div>
@@ -440,9 +440,19 @@
             <div class="fifth-screen__wrapper">
                 <div class="container">
                     
-                    <div class="fifth-screen__card">
+                    <div id="cardFirst" class="fifth-screen__card">
+                        <div class="fifth-screen__overlay">
+                            <div class="fifth-screen__overlayWrapper">
+                                <div class="fifth-screen__imageEnlarged "> 
+                                    <img src="./img/documents/1180068.jpg" alt="">
+                                    <button class="fifth-screen__btnHide">
+                                    <i class="fa fa-times" aria-hidden="true"></i></i></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                         <div class="fifth-screen__imgBx">
-                            <img class="miniatuyra1" src="./img/documents/1180068.jpg" alt="figma">
+                            <img src="./img/documents/1180068.jpg" alt="figma">
                             <ul class="action">
                                 <li> 
                                     <div  class="fifth-screen__heart" onclick="this.style.color='red'"><i class="fa fa-heart" aria-hidden="true"></i>
@@ -453,8 +463,10 @@
                                     <span>подлинник</span></a> 
                                 </li>
                                 <li>
-                                    <div  class="fifth-screen__eyes"><i class="fa fa-eye" aria-hidden="true"></i>
-                                        <span>увеличить</span></div>
+                                    <div  class="fifth-screen__eyes">
+                                        <button id = 'btnOpen1' class="fifth-screen__btnOpen" ><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                        <span>увеличить</span>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -475,9 +487,20 @@
                         </div>
                     </div>
 
-                    <div class="fifth-screen__card">
+
+                    <div id="cardSecond" class="fifth-screen__card">
+                        <div class="fifth-screen__overlay">
+                            <div class="fifth-screen__overlayWrapper">
+                                <div class="fifth-screen__imageEnlarged "> 
+                                    <img src="./img/documents/1187960.jpg" alt="">
+                                    <button class="fifth-screen__btnHide">
+                                    <i class="fa fa-times" aria-hidden="true"></i></i></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                         <div class="fifth-screen__imgBx">
-                            <img class="miniatuyra1" src="./img/documents/1187960.jpg" alt="«Git. Базовый курс»">
+                            <img src="./img/documents/1187960.jpg" alt="«Git. Базовый курс»">
                             <ul class="action">
                                 <li> 
                                     <div  class="fifth-screen__heart" onclick="this.style.color='red'"><i class="fa fa-heart" aria-hidden="true"></i>
@@ -488,8 +511,11 @@
                                     <span>подлинник</span></a> 
                                 </li>
                                 <li>
-                                    <div  class="fifth-screen__eyes"><i class="fa fa-eye" aria-hidden="true"></i>
-                                        <span>увеличить</span></div>
+                                    <div  class="fifth-screen__eyes">
+                                        <button id = 'btnOpen2' class="fifth-screen__btnOpen"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                        
+                                        <span>увеличить</span>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -999,9 +1025,6 @@
                             </div>
                         </div>
                     </div>
-
-
-
                 </div>
             </div>
         </div>
@@ -1068,6 +1091,68 @@
             </div>
         </div> 
         
+
+        <div class="communication-screen">
+            <div class="communication-screen__wrapper">
+                <div class="communication-screen__clock">
+                    <div class="communication-screen__title">
+                        <h2 class="communication-screen__communication">
+                            
+                        </h2>
+                    </div>
+                    <div class="clock">
+                        <div class="hour">
+                            <div class="hr" id="hr"></div>
+                        </div>
+                        <div class="min">
+                            <div class="mn" id="mn"></div>
+                        </div>
+                        <div class="sec">
+                            <div class="sc" id="sc"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="communication-screen__cup">
+                    <div class="container">
+                        <div class="plate"></div>
+                        <div class="cup">
+                            <div class="cupTop">
+                                <div class="vapour">
+                                    <span style="--i:1;"></span>
+                                    <span style="--i:16;"></span>
+                                    <span style="--i:2;"></span>
+                                    <span style="--i:18;"></span>
+                                    <span style="--i:4;"></span>
+                                    <span style="--i:14;"></span>
+                                    <span style="--i:6;"></span>
+                                    <span style="--i:20;"></span>
+                                    <span style="--i:7;"></span>
+                                    <span style="--i:9;"></span>
+                                    <span style="--i:10;"></span>
+                                    <span style="--i:11;"></span>
+                                    <span style="--i:3;"></span>
+                                    <span style="--i:13;"></span>
+                                    <span style="--i:8;"></span>
+                                    <span style="--i:15;"></span>
+                                    <span style="--i:17;"></span>
+                                    <span style="--i:5;"></span>
+                                    <span style="--i:12;"></span>
+                                    <span style="--i:19;"></span>
+                                    
+                                </div>
+                                <div class="cupCircle">
+                                    <div class="cupTea"></div>
+                                </div>
+                            </div>
+                            <div class="cupHandle">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="seventh-screen">
             <h2 class="seventh-screen__title">я готов к <span> труду и ..</span></h2>
             <div class="container">

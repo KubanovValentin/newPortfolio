@@ -32,6 +32,13 @@ function animateBlocks() {
 
 animateBlocks();
 
+
+
+
+
+
+
+
 // // -----------------------кнопка перехода на другой экран
 function hideshow() {
     document.getElementById("first").style = "display:none";
@@ -89,27 +96,58 @@ function hideShow() {
     });
 // });
 
-
-// 
-
-// function changeBg() {
-//     document.querySelector(".fa ").style.color = "#ff2020";
-    
+// function clickBtn(){
+//     document.querySelector('.fifth-screen__overlay').style.display='block'; 
+//     document.querySelector('.fifth-screen__btnOpen').style.display='none'; 
+//     document.querySelector('.fifth-screen__btnHide').style.display='block';
+//     document.querySelector('body').style.overflow= 'hidden';
 // }
-// $(document).ready(function(){
-//     $(".fifth-screen__heart").on("click", function() {
-//       if($(this).attr("title")=="Добавить в избранное") {
-//          $(".fa-heart").css({color : "#f71e1e"});
-//          $(this).attr("title","Удалить из избранного");
-//       } else  {
-//          $(".fa-heart").css({color : "#333333"});
-//          $(this).attr("title","Добавить в избранное");
-//       }
-//     });
-//     });
+// function closeBtn(){
+//     document.querySelector('.fifth-screen__overlay').style.display='none';
+//     document.querySelector('.fifth-screen__btnHide').style.display='none';
+//     document.querySelector('.fifth-screen__btnOpen').style.display='block';
+//     document.querySelector('body').style.overflow= 'scroll';
+// }
 
-// 
+// const btnOpen1 = document.getElementById('btnOpen1');
+// btnOpen1.addEventListener('click', (e) => {
+//     document.querySelector('.fifth-screen__overlay').style.display='block'; 
+//     document.querySelector('.fifth-screen__btnOpen').style.display='none'; 
+//     document.querySelector('.fifth-screen__btnHide').style.display='block';
+//     document.querySelector('body').style.overflow= 'hidden';
+// });
 
+// const btnOpen2 = document.getElementById('btnOpen2');
+// btnOpen2.addEventListener('click', (e) => {
+//     document.querySelector('.fifth-screen__overlay').style.display='block'; 
+//     document.querySelector('.fifth-screen__btnOpen').style.display='none'; 
+//     document.querySelector('.fifth-screen__btnHide').style.display='block';
+//     document.querySelector('body').style.overflow= 'hidden';
+// });
+
+// const deliteElement = (event) =>  {
+//     console.log(event.target);
+//     // console.log(event.currentTarget);
+//     console.log(event.type);
+//     event.target.style.display = 'flex';
+// };
+
+const btn = document.querySelector('.fifth-screen__btnOpen');
+    btn.addEventListener('click', () => {
+    document.querySelector('.fifth-screen__overlay').style.display='block'; 
+    
+    });
+
+const closeBtn = document.querySelector('.fifth-screen__btnHide');
+closeBtn.addEventListener('click', () => {
+    document.querySelector('.fifth-screen__overlay').style.display='none';
+
+});
+
+// btn.forEach(item => {
+//     item.addEventListener('click');
+//     // btn.addEventListener('click', deliteElement, {once:true}); это что бы клик один раз
+// });
 
 VanillaTilt.init(document.querySelectorAll(".sixth-screen__slip"),{
     max: 50,
@@ -117,4 +155,23 @@ VanillaTilt.init(document.querySelectorAll(".sixth-screen__slip"),{
     glare:true,
     // max-glare : 1,
     // "glare-prerender":true,
+});
+
+
+// 
+
+setInterval(() => {
+    const deg = 6;
+    const hr = document.querySelector('#hr');
+    const mn = document.querySelector('#mn');
+    const sc = document.querySelector('#sc');
+
+    let day = new Date();
+    let hh = day.getHours(17) * 30;
+    let mm = day.getMinutes(32) * deg;
+    let ss = day.getSeconds(47) * deg;
+
+    hr.style.transform = `rotateZ(${(hh) + (mm/12)}deg)`;
+    mn.style.transform = `rotateZ(${mm}deg)`;
+    sc.style.transform = `rotateZ(${ss}deg)`;
 });
