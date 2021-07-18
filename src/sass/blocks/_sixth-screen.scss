@@ -54,10 +54,15 @@
             text-decoration-color:rgb(44, 195, 6);
         }
     }
+    &__descr {
+        span {
+            color: red;
+        }
+    }
     &__slip {
         position: relative;
         width: 250px;
-        height: 680px;
+        height: 700px;
         margin: 13px;
         box-shadow:20px 20px 50px rgba(0,0,0,0.5);
         border-radius: 15px;
@@ -73,7 +78,7 @@
     }
     &__content {
         position: relative;
-        padding: 20px;
+        padding: 10px;
         text-align: center;
         transform: translateY(100px);
         opacity: 0;
@@ -86,9 +91,9 @@
         h2 {
             position: absolute;
             top: -60px;
-            right: 30px;
+            right: 20px;
             font-size: 2.3em;
-            color: rgba(255, 255, 255,0.07);
+            color: rgba(255, 255, 255,0.1);
             pointer-events: none;
         }
         h3 {
