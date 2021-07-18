@@ -45,6 +45,11 @@
         flex-wrap: wrap;
         padding: 20px;
     }
+    &__subtitle {
+        text-decoration: underline;
+        // border-bottom: 1px solid red;
+        text-decoration-color:red;
+    }
     &__slip {
         position: relative;
         width: 250px;

@@ -1,0 +1,44 @@
+.feed {
+    padding-bottom: 71px;
+    .title {
+        margin-bottom: 70px;
+    }
+    hr {
+        border-bottom: none;
+        // background-color: #f6f6f6;
+        background-color: none ;
+        margin-top: 48px;
+        margin-bottom: 53px;
+        &:nth-child(5) {
+            margin-top: 50px;
+            margin-bottom: 49px;
+        }
+    }
+    &__text {
+        margin-left: 62px;
+        padding-right: 60px;
+    }
+    &__item {
+        display: flex;
+    }
+    &__img {
+        width: 169px;
+        height: 169px;
+    }
+    &__subtitle {
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &__count {    
+        color: #646464;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    &__descr {
+        margin-top: 10px;
+        color: #0d0d0d;
+        font-size: 15px;
+        font-weight: 300;
+    }
+}

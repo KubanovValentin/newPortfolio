@@ -1,0 +1,60 @@
+// @keyframes slideExpandUp {
+//     0% {
+//         transform: translateY(100%) scaleX(0.5);
+//     }
+//     30%{
+//         transform: translateY(-8%) scaleX(0.5);
+//     }   
+//     40%{
+//         transform: translateY(2%) scaleX(0.5);
+//     }
+//     50%{
+//         transform: translateY(0%) scaleX(1.1);
+//     }
+//     60%{
+//         transform: translateY(0%) scaleX(0.9);      
+//     }
+//     70% {
+//         transform: translateY(0%) scaleX(1.05);
+//     }           
+//     80%{
+//         transform: translateY(0%) scaleX(0.95);     
+//     }
+//     90% {
+//         transform: translateY(0%) scaleX(1.02);
+//     }   
+//     100%{
+//         transform: translateY(0%) scaleX(1);        
+//     }
+// }
+// @keyframes go-bottom-top {
+//     from {
+//         bottom: 0px;
+//         transform: scale(0.4);
+//     }
+//     to {
+//         bottom: calc(20% - 10px);
+//         transform: scale(1.4);
+//     }
+// }
+
+@keyframes heartbeat {
+    from {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes go-left-right {
+    from {
+        left: 0px;
+    }
+    to {
+        left: calc(20% - 10px);
+    }
+}
