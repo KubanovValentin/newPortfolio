@@ -1,0 +1,43 @@
+.personnel {
+    &_up {
+        min-height: 320px;
+        background: url(../img/bdg/personnel-up-bgd.jpg) center (center/cover) no-repeat;
+        padding: 58px 20px 75px 20px;
+    }
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 102px;
+        height: 102px;
+        border: 1px solid #ffffff;
+        border-radius: 100%;
+        margin: 0 auto;
+    }
+    &__title {
+        margin-top: 20px;
+        color: #ffffff;
+        font-size: 26px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 23px;
+        text-align: center;
+    }
+    &__subtitle {
+        margin-top: 22px;
+        color: #ffffff;
+        font-size: 19px;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 27px;
+        text-align: center;
+    }
+    &_down {
+        min-height: 342px;
+        background: url(../img/bdg/personnel-down-bgd.jpg) center (center/cover) no-repeat;
+        padding: 58px 0 76px 0;
+    }
+
+}

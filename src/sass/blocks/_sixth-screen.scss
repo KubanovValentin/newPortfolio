@@ -49,6 +49,10 @@
         text-decoration: underline;
         // border-bottom: 1px solid red;
         text-decoration-color:red;
+        span {
+            text-decoration: underline;
+            text-decoration-color:rgb(44, 195, 6);
+        }
     }
     &__slip {
         position: relative;

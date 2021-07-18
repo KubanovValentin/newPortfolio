@@ -1,0 +1,14 @@
+.title {
+    color: #2e2e2e;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    &_mini {
+        color: #ec644b;
+        font-family: "Roboto - Bold";
+        font-size: 16px;
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,29 @@
+.button {
+    width: 160px;
+    height: 45px;
+    border-radius: 30px;
+    background-color: $main-color;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22.04px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none ;
+    &_main {
+        width: 230px;
+        height: 57px;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 17.35px;
+        text-align: center;    
+    }
+    &_submit {
+        width: 180px;
+    }
+    &_modal {
+        margin-top: 20px;
+        width: 260px;
+    }
+}

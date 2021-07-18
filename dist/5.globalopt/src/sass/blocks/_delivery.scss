@@ -1,0 +1,36 @@
+.delivery {
+    min-height: 620px;
+    padding: 51px 0 57px 0;
+    .title {
+        margin-bottom: 20px;
+    }
+    &__descr {
+        margin-top: 17px;
+        color: #2e2e2e;
+        font-size: 21px;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 24px;
+        text-align: center;
+    }
+    &__conditions {
+        margin-top: 37px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__block {
+        width: 360px;
+    }
+    &__img {
+        margin-bottom: 27px;
+        width: 100%;
+        min-height: 210px;
+    }
+    &__text {
+        text-align: justify;
+    }
+    
+}
+
+

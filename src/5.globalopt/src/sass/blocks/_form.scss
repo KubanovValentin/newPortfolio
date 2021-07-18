@@ -1,0 +1,43 @@
+.form {
+    &_catalog {
+        border: 1px solid #898989;
+        padding: 68px 0 50px 0;
+    }
+    input, select {
+        border-radius: 30px;
+        background-color: #fff;
+        padding: 0 20px;
+        font-size: 14px;
+        font-weight: 300;
+        min-width: 268px;
+        height: 45px;
+        border: 1px solid rgba(0, 0, 0, 0.21);
+    }
+    &__button_catalog {
+        width: 200px;
+        height: 50px;
+        position: absolute;
+        top: 90%;
+        right: 50%;
+        transform: translateX(50%);
+        background-color: #ffffff;
+    }
+    &_questions {
+        padding: 18px 5px 25px 5px;
+    }
+    &__textarea {
+        margin: 8px 0 17px 0;
+        textarea{
+            width: 813px;
+            height: 71px;
+            border-radius: 15px;
+            border: 1px solid rgba(0, 0, 0, 0.21);
+            background-color: #ffffff;
+            color: #616467;
+            font-size: 13px;
+            font-weight: 300;
+            padding: 18px 0 0 25px;
+        }
+    }
+
+}

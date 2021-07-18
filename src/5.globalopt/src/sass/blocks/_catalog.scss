@@ -1,0 +1,140 @@
+.catalog {
+    min-height: 952px;
+    padding: 53px 20px 58px 20px;
+    .title {
+        margin-bottom: 20px;
+    }
+    &__descr {
+        color: #2e2e2e;
+        font-size: 21px;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 24px;
+        text-align: center;
+        margin-top: 17px;
+    }
+    &__wrapper {
+        margin-top: 34px;
+        display: flex;
+    }
+    &__require {
+        border: 1px solid #e9e9e9;
+        background-color: #ffffff;
+        text-align: center;
+        padding: 1px 0 25px 0;
+        margin:  0 10px 0 10px;
+
+    }
+    &__btn {
+        display: block;
+        width: 160px;
+        height: 45px;
+        border-radius: 30px;
+        background-color: $main-color;
+        border: none ;
+        margin: 0 auto;
+        cursor: pointer;
+        a {
+            display: block;
+            line-height: 45px;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 45px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+    &__block {
+        margin: 0 auto;
+        display: block;
+        background-color: #25333c;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 60px;
+        text-transform: uppercase;
+    }
+    &__img {
+        margin-top: 14px;
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    }
+    &__prises {
+        margin-top: 10px;
+    }
+    &__step {
+        color: #2e2e2e;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    &__prise {
+        color: $main-color;
+        font-size: 28px;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 30px;
+    }
+    &__proposal {
+        margin-top: 20px;
+        padding: 0 18px;
+        color: #2e2e2e;
+        font-size: 14px;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 20px;
+        margin-bottom: 25px;
+    }
+    &__consultation {
+        margin-top: 56px;
+        text-align: center;
+        position: relative;
+    }
+    &__title {
+        color: #3a3a3a;
+        font-size: 28px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 23px;
+        margin-bottom: 71px;
+    }
+
+    &__icon-wrapper {
+        position: absolute;
+        top: 15%;
+        right: 50%;
+        transform: translateX(50%);
+        background-color: #ffffff;
+        width: 120px;
+    }
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 102px;
+        height: 102px;
+        border: 1px solid $main-color;
+        border-radius: 100%;
+        margin: 0 auto;
+    }
+    .error {
+        border:1px solid red;
+    }
+    label.error {
+        color: #fff;
+        border: none;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}

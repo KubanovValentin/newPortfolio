@@ -1,0 +1,87 @@
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0,0,0,0.56);
+    z-index: 10;
+}
+.modal {
+    position: absolute;
+    z-index: 7;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    min-height: 400px;
+    background-color: #f2f2f2;
+    padding: 38px 40px 40px 40px;
+    &_big {
+        width: 780px;
+        min-height: 400px;
+        .form {
+            display: flex;
+            input, select {
+                min-width: 330px;
+            }
+        }
+    }
+    &__close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 41px;
+        line-height: 21px;
+        color: red;
+        cursor: pointer;
+    }
+    &__subtitle {
+        color: #030303;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+    }
+    &__descr {
+        color: #0d0d0d;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+    }
+    &__info {
+        margin-top: 30px;
+        color: #2e2e2e;
+        font-size: 26px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 23px;
+        text-align: center;
+    }
+    &_mini {
+        min-height: 140px;
+    }
+    .error {
+        border:1px solid red;
+    }
+    label.error {
+        border: none;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+.form {
+    text-align: center;
+    input, select {
+        margin: 10px;
+    }
+}
+
+
+#consultation, #calculation, #thanks {
+    display: none;
+}
+// #consultation, #order, #thanks{
+//     display: none;
+// }
+

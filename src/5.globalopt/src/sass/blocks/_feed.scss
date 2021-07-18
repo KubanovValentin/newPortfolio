@@ -1,0 +1,22 @@
+.feed {
+    min-height: 470px;
+    padding: 51px 0 65px 0;
+    text-align: center;
+    .title {
+        margin-bottom: 25px;
+    }
+    img {
+        margin: 0 auto;
+    }
+    &__descr {
+        margin-top: 17px;
+        margin-bottom: 31px;
+        color: #2e2e2e;
+        font-size: 21px;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 24px;
+        text-align: center;
+    }
+}

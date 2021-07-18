@@ -1,0 +1,108 @@
+.footer {
+    &__map {
+        width: 100%;
+        height: 500px;
+        border: 0;
+    }
+    &__head {
+        background-color: #25333c;
+        padding: 24px 0 28px 0;
+    }
+    &__menu {
+        padding: 0 10px 0 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 26px;
+    }
+    &__title {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        margin-right: 15%;
+    }
+    &__contacts {
+        display: flex;
+        text-align: end;
+    }
+    &__descr {
+        margin-right: 19px;
+        a {
+            color: #ffffff;
+            font-size: 19px;
+            font-weight: 700;
+        }
+    }
+    &__question {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    &__info {
+        padding: 0 10px 0 10px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #ffffff;
+    }
+    &__ad {
+        opacity: 0.6;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 300;
+    }
+    &__privacy {
+        margin-right: 15%;
+        a {
+            color:  $main-color;
+            font-size: 13px;
+            font-weight: 300;
+            text-decoration: underline;
+        }
+    }
+    &__advertisement {
+        display: flex;
+        align-items: center;
+    }
+    &__subtext {
+        opacity: 0.6;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 300;
+    }
+    &__place {
+        position: relative;
+    }
+    &__adress {
+        padding: 27px 40px 29px 40px;
+        position: absolute;
+        width: 329px;
+        background-color: #ffffff;
+        right: 20%;
+        top: 30%;
+        color: #3a3a3a;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+        &::before {
+            content: ''; 
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            left: 0;
+            top:50%;   
+            transform:  translateX(-50%) translateY(-50%) rotate(45deg); 
+            background-color: #ffffff;
+        }
+        span {
+            color: $main-color;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        a {
+            color: $main-color;
+        }
+    }
+
+}
