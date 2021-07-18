@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?j0nlh7');
+  src:  url('../fonts/icomoon.eot?j0nlh7#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?j0nlh7') format('truetype'),
+    url('../fonts/icomoon.woff?j0nlh7') format('woff'),
+    url('../fonts/icomoon.svg?j0nlh7#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak-as: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-1password:before {
+  content: "\e900";
+  color: #0094f5;
+}
+.icon-500px:before {
+  content: "\e901";
+  color: #0099e5;
+}
+.icon-abbrobotstudio:before {
+  content: "\e902";
+  color: #ff9e0f;
+}
+.icon-about-dot-me:before {
+  content: "\e903";
+  color: #00a98f;
+}
+.icon-abstract:before {
+  content: "\e904";
+}
+.icon-academia:before {
+  content: "\e905";
+}
+.icon-accusoft:before {
+  content: "\e906";
+  color: #ff7e4a;
+}
