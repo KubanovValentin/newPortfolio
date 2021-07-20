@@ -89,16 +89,16 @@
 
 
 
-// @keyframes animateRot {
-//     0% 
-//     {
-//         transform: rotateY(360deg);
-//     }
-//     100% 
-//     {
-//         transform: rotateY(0deg);
-//     }
-// }
+@keyframes animateRot {
+    0% 
+    {
+        transform: rotateY(360deg);
+    }
+    100% 
+    {
+        transform: rotateY(0deg);
+    }
+}
 // @keyframes animateShadow {
 //     0%,100% 
 //     {

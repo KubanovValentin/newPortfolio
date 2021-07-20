@@ -1,7 +1,7 @@
 'use strict';
 // --------------------------------1 first-page анимация
 const container = document.querySelector('.container');
-for (var i = 0; i<= 200; i++){
+for (var i = 0; i<= 50; i++){
     const blocks = document.createElement('div');
     blocks.classList.add('block');
     container.appendChild(blocks);
@@ -11,21 +11,21 @@ function animateBlocks() {
     anime({
         targets: '.block',
         translateX: function(){
-            return anime.random(-700, 700);
+            return anime.random(-800, 800);
         },
         translateY: function(){
             return anime.random(-500, 500);
         },
         scaleX: function(){
-            return anime.random(-1.5, 1.5);
+            return anime.random(-2, 2);
         },
         scaleY: function(){
-            return anime.random(-1.5, 1.5);
+            return anime.random(-2, 2);
         },
 
         easing: 'linear',
         duration: 3000,
-        delay: anime.stagger(10),
+        delay: anime.stagger(20),
         complete: animateBlocks,
     });
 }
@@ -52,9 +52,8 @@ function hideShow() {
 
 
 // ----------------
-// setInterval(function(), 1000);
 // second page 
-// window.addEventListener("load", function() {
+
 
 	const text = document.querySelector('.fifth-screen__textAct');
     text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
@@ -71,17 +70,17 @@ function hideShow() {
         translateX : 0,
         translateY : 0,
         duration: 1000,
-        delay: anime.stagger(10),
+        delay: anime.stagger(20),
     })
     .add({
         rotate : function(){
             return anime.random(-360, 360);
         },
         translateX : function(){
-            return anime.random(-500, 500);
+            return anime.random(-100, 100);
         },
         translateY : function(){
-            return anime.random(-500, 500);
+            return anime.random(-100, 100);
         },
         duration: 5000,
         delay: anime.stagger(20),
@@ -94,7 +93,7 @@ function hideShow() {
         duration: 5000,
         delay: anime.stagger(20),
     });
-// });
+
 
 // function clickBtn(){
 //     document.querySelector('.fifth-screen__overlay').style.display='block'; 
@@ -150,15 +149,13 @@ closeBtn.addEventListener('click', () => {
 // });
 
 VanillaTilt.init(document.querySelectorAll(".sixth-screen__slip"),{
-    max: 50,
-    speed: 400,
+    max: 20,
+    speed: 100,
     glare:true,
-    // max-glare : 1,
-    // "glare-prerender":true,
 });
 
 
-// 
+// часы 
 
 setInterval(() => {
     const deg = 6;

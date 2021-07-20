@@ -111,12 +111,16 @@
             display: inline-block;
             padding: 8px 20px;
             margin: 15px;
-            background: #fff;
+            background: rgba(195, 191, 191,0.01);
             color: black;
             border-radius: 20px;
             text-decoration: none;
             font-weight: 500;
-            box-shadow:0 5px 15px rgba(0,0,0,0.2)
+            box-shadow:0 5px 15px rgba(0,0,0,0.2);
+            &:hover {
+                transform: scale(1.1);
+                box-shadow: 0px 5px 15px rgb(0,0,0);
+            }
         }
     }
     &__img {
@@ -124,5 +128,8 @@
         width: 200px;
         height: 100px;
         object-fit: contain;
+    }
+    &__project {
+        border: 3px double rgb(0, 0, 0);
     }
 }

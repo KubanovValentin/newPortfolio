@@ -8,12 +8,10 @@
     <title>Portfolio</title>
     <meta name="title" content="Мое портфолио">
     <meta name="description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
-
+    <meta name="yandex-verification" content="5786c641aa9fdbda" />
 
     <!-- Primary Meta Tags -->
-    <title>Portfolio</title>
     <meta name="title" content="Portfolio">
-    <meta name="description" content="">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -65,7 +63,7 @@
             <div class="container">
                 <h2 class="first-screen__title"><span>Внимание!!!</span><br>Загрузка нужного Вам специалиста завершеннa!!!</h2>
             </div>
-            <button onclick="hideshow();">Button<svg><rect></rect></svg></button>
+            <button onclick="hideshow();">Button<svg><rect width="13vw" height="3vw"></rect></svg></button>
         </div>
     </section>
 
@@ -74,8 +72,8 @@
             <div class="container">
                 <div class="second-screen__text">
                     <h2 class="second-screen__name">Я Валентин Кубанов ᕦ༼◣_◢༽つ</h2>
-                    <h2 class="second-screen__name second-screen__name_dw">ЯВалентин<br> Кубанов</h2>
-                    <h3 class="second-screen__direction"> `Начинающий` <b>Web<b>-программист</b></h3>
+                    <h2 class="second-screen__name second-screen__name_dw">Я Валентин<br> Кубанов</h2>
+                    <h3 class="second-screen__direction"> `Начинающий` <b>Web-программист</b></h3>
                     <h4 class="second-screen__descr">Желательно просмотр в desktop`Е` ¯\_(ツ)_/¯</h4>
                 </div>
                 <svg>
@@ -83,7 +81,7 @@
                         <feTurbulence id = "turbulence" baseFrequency = "0.1 0.2" numOctaves = "2" seed = "3">
                             <animate attributeName = "baseFrequency" dur = "7s" values="0.1 0.1;0.12 0.2" repeatCount="indefinite"></animate>
                         </feTurbulence>
-                        <feDisplacementMap in="SourceGraphic" scale="10"></feDisplacementMap>
+                        <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="10" xChannelSelector="R" yChannelSelector="G" ></feDisplacementMap>
                     </filter>
                 </svg>
                 <div class="second-screen__fhoto">
@@ -130,7 +128,7 @@
                         <div class="third-screen__descr" style="--j:0;">
                             <h2>карта реальности</h2>
                             <p>Я <i>начинающий</i> Web программист.</p>
-                            <p>Недавно я окончил обучению по <b>HTML</b>, <b>CSS</b> и поверхностно <b>JavaScript</b>.</p>
+                            <p>Недавно я окончил обучению по <b>HTML</b>, <b>CSS</b> и основы <b>JavaScript</b>.</p>
                             <p>На данный момент я фрилансер, но продолжаю обучение по полному курсу <b>JavaScript</b>+<b>React</b>.</p>
                             <p>Имею большой жизненный опыт, а так же желание работать в команде над проектами компании.</p>
                             <p> <span>Готов реализовывать интересные и сложные проекты!</span></p>
@@ -446,7 +444,7 @@
                                 <div class="fifth-screen__imageEnlarged "> 
                                     <img src="./img/documents/1180068.jpg" alt="">
                                     <button class="fifth-screen__btnHide">
-                                    <i class="fa fa-times" aria-hidden="true"></i></i></i>
+                                    <i class="fa fa-times" aria-hidden="true"></i>
                                     </button>
                                 </div>
                             </div>
@@ -494,7 +492,7 @@
                                 <div class="fifth-screen__imageEnlarged "> 
                                     <img src="./img/documents/1187960.jpg" alt="">
                                     <button class="fifth-screen__btnHide">
-                                    <i class="fa fa-times" aria-hidden="true"></i></i></i>
+                                    <i class="fa fa-times" aria-hidden="true"></i>
                                     </button>
                                 </div>
                             </div>
@@ -1029,7 +1027,6 @@
             </div>
         </div>
 
-
         <div class="sixth-screen">
             <div class="sixth-screen__wrapper">
                 <div class="conteiner">
@@ -1114,13 +1111,23 @@
             </div>
         </div> 
         
-
         <div class="communication-screen">
             <div class="communication-screen__wrapper">
                 <div class="communication-screen__clock">
+                    <div class="communication-screen__box">
+                        <div class="communication-screen__textBox">
+                            <div class="communication-screen__textRotation">
+                                <h2>Git</h2>
+                            </div>
+                            <div class="communication-screen__textRotation">
+                                <h2>Hub</h2>
+                            </div>
+                        </div>
+                        <div class="communication-screen__shadow"></div>
+                    </div>
                     <div class="communication-screen__title">
                         <h2 class="communication-screen__communic">
-                            
+                            Давайте сделаем 
                         </h2>
                     </div>
                     <div class="clock">
@@ -1167,9 +1174,7 @@
                                     <div class="cupTea"></div>
                                 </div>
                             </div>
-                            <div class="cupHandle">
-
-                            </div>
+                            <div class="cupHandle"></div>
                         </div>
                     </div>
                 </div>
@@ -1225,7 +1230,7 @@
                         </div>
 
                         <div class="inputBox w50">
-                            <input type="text number" required>
+                            <input type="text" required>
                             <span>mobaile number</span>
                         </div>
 
@@ -1261,10 +1266,9 @@
                             </div>
                         </div>  -->
 
-    
-    <script src="js/vanilla-tilt.js"></script>
-    <script src="js/anime.min.js"></script>
-    <script src="js/script.js"></script>
+    <script defer src="js/anime.min.js"></script>
+    <script defer src="js/vanilla-tilt.js"></script>
+    <script defer src="js/script.js"></script>
 </html>
 
 
